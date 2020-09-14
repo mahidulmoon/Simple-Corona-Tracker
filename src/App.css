@@ -1,0 +1,27 @@
+.site-footer {
+  padding: 2em 0; 
+}
+  .site-footer .social-item {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #b3bdc6;
+    position: relative;
+    border-radius: 50%;
+    background-color: lightgreen;
+    font-size: 22px;
+    margin: 0 10px;
+  }
+.social-item {
+  padding-top: 7px;
+  color: black;
+  font-family: bold;
+}
+.bodycontainer{
+  margin-top:50px;
+  margin-bottom: 20px;
+}
+.list-group{
+  height: 600px;
+  overflow: scroll;
+}
