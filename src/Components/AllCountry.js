@@ -55,7 +55,7 @@ export default class AllCountry extends Component {
                             
                             <p className="float-right"><span id="date"></span></p>
                             
-                            <h4>Confirmed 🤕</h4>
+                            <h4>Confirmed </h4>
                             
                             <b>Total:</b> <span id="total_confirmed">{this.state.countryResult.confirmed}</span>
                             
@@ -67,7 +67,7 @@ export default class AllCountry extends Component {
                             
                             <hr />
                             
-                            <h4>Recovered 🤗</h4>
+                            <h4>Recovered </h4>
                             
                             <b>Total:</b> <span id="total_recovered" style={{color:'green'}}>{this.state.countryResult.recovered}</span>
                             
