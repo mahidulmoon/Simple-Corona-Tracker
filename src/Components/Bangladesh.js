@@ -139,7 +139,7 @@ export default class Bangladesh extends Component {
                     <ProgressBar>
                         <ProgressBar striped variant="success" label={`${((this.state.result.recovered24*100)/this.state.result.test24).toFixed(2)}%`}  now={(this.state.result.recovered24*100)/this.state.result.test24} key={1} />
                         <ProgressBar variant="warning" label={`${((this.state.result.positive24*100)/this.state.result.test24).toFixed(2)}%`} now={(this.state.result.positive24*100)/this.state.result.test24} key={2} />
-                        <ProgressBar striped variant="danger" label={`${((this.state.result.death24*100)/this.state.result.test24).toFixed(2)}%`} now={(this.state.result.death24*100)/this.state.result.test24} key={3} />
+                        <ProgressBar striped variant="danger" label={`${((this.state.result.death24*100)/this.state.result.positive24).toFixed(2)}%`} now={(this.state.result.death24*100)/this.state.result.positive24} key={3} />
                     </ProgressBar>
                     <p style={{color:'red'}}>Death: {((this.state.result.death24*100)/this.state.result.test24).toFixed(2)}%</p>
                     
@@ -150,7 +150,7 @@ export default class Bangladesh extends Component {
                     <ProgressBar>
                         <ProgressBar striped variant="success" label={`${((this.state.result.totalrecovered*100)/this.state.result.totaltest).toFixed(2)}%`}  now={(this.state.result.totalrecovered*100)/this.state.result.totaltest} key={1} />
                         <ProgressBar variant="warning" label={`${((this.state.result.totalpositive*100)/this.state.result.totaltest).toFixed(2)}%`} now={(this.state.result.totalpositive*100)/this.state.result.totaltest} key={2} />
-                        <ProgressBar striped variant="danger" label={`${((this.state.result.totaldeath*100)/this.state.result.totaltest).toFixed(2)}%`} now={(this.state.result.totaldeath*100)/this.state.result.totaltest} key={3} />
+                        <ProgressBar striped variant="danger" label={`${((this.state.result.totaldeath*100)/this.state.result.totalpositive).toFixed(2)}%`} now={(this.state.result.totaldeath*100)/this.state.result.totalpositive} key={3} />
                     </ProgressBar>
                     <p style={{color:'red'}}>Death: {((this.state.result.totaldeath*100)/this.state.result.totaltest).toFixed(2)}%</p>
                 </div>
